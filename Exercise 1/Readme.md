@@ -159,7 +159,7 @@ make clean
 And now we're going to build xpdf using the **afl-clang-fast** compiler:
 ```
 export LLVM_CONFIG="llvm-config-11"
-CC=$HOME/AFLplusplus/afl-clang-fast CXX=$HOME/AFLplusplus/afl-clang-fast++ ./configure --prefix="$HOME/fuzzing_xpdf/install/"
+CC=/AFLplusplus/afl-clang-fast CXX=/AFLplusplus/afl-clang-fast++ ./configure --prefix="$HOME/fuzzing_xpdf/install/"
 make
 make install
 ```
